@@ -46,7 +46,6 @@ export VEDITOR='code' # sorry not sorry
 
 export GPG_TTY=$(tty) # fixes GPG
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing
-export HOMEBREW_GITHUB_API_TOKEN=7c953bccffe6d4aac009258f95f4a53d7277055d
 
 
 
