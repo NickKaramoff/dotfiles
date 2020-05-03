@@ -6,11 +6,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 DEFAULT_USER="nick"
+
 HISTFILE=~/.history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt APPEND_HISTORY
-setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 
 autoload -Uz compinit
