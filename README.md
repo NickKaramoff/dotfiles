@@ -19,4 +19,6 @@ git clone https://github.com/NickKaramoff/dotfiles.git .dotfiles
 
 ln -s .dotfiles/zsh/zshrc.zsh .zshrc
 ln -s .dotfiles/zsh/p10k.zsh .p10k.zsh
+ln -s .dotfiles/zsh/zsh_plugins.txt .zsh_plugins.txt
+antibody bundle < .zsh_plugins.txt > .zsh_plugins.sh
 ```

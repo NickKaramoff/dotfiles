@@ -1,0 +1,8 @@
+zsh-users/zsh-completions
+
+romkatv/powerlevel10k
+
+ohmyzsh/ohmyzsh path:plugins/sudo
+ohmyzsh/ohmyzsh path:plugins/git
+mfaerevaag/wd
+NickKaramoff/ohmyzsh-key-bindings
