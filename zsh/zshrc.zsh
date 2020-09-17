@@ -42,7 +42,8 @@ source ~/.zsh_plugins.sh
 export DOTFILES="$HOME/.dotfiles"
 
 export EDITOR='nano'  # sorry
-export VEDITOR='code' # sorry not sorry
+export VISUAL='code' # sorry not sorry
+
 
 export GPG_TTY=$(tty) # fixes GPG
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing on macOS
