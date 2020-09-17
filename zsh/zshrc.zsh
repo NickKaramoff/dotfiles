@@ -156,7 +156,9 @@ function dpsl() {
    ##     #######   #######  ########  ######  
 
 ### pyenv ###
-eval "$(pyenv init - zsh)"
+if type pyenv &>/dev/null; then
+  eval "$(pyenv init - zsh)"
+fi
 
 ### nvm ###
 declare -a NODE_GLOBALS=("nvm")
