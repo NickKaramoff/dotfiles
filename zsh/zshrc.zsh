@@ -26,7 +26,7 @@ promptinit
 zstyle ':completion:*' menu select=long-list select=0
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-source ~/.zsh_plugins.sh
+[[ ! -f ~/.zsh_plugins.sh ]] || source ~/.zsh_plugins.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
