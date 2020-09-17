@@ -60,14 +60,11 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing
 export ANDROID_HOME="$HOME/dev/android-sdk"
 export GOPATH="$HOME/go"
 
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/Cellar/node/13.13.0_1/bin:$PATH"
 
 
 
