@@ -160,14 +160,12 @@ if type pyenv &>/dev/null; then
   eval "$(pyenv init - zsh)"
 fi
 
-### nvm ###
-declare -a NODE_GLOBALS=("nvm")
+## nvm ###
 load_nvm () {
     export NVM_DIR=~/.nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 }
 nvm() {
-  unset -f ${NODE_GLOBALS}
   load_nvm
   nvm $@
 }
