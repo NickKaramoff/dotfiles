@@ -13,6 +13,7 @@ SAVEHIST=10000
 setopt APPEND_HISTORY
 setopt HIST_REDUCE_BLANKS
 
+### Completion ###
 autoload -Uz compinit
 if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
   compinit
@@ -20,7 +21,6 @@ else
   compinit -C
 fi
 
-### Completion ###
 autoload -U promptinit
 promptinit
 zstyle ':completion:*' menu select=long-list select=0
@@ -45,7 +45,7 @@ export EDITOR='nano'  # sorry
 export VEDITOR='code' # sorry not sorry
 
 export GPG_TTY=$(tty) # fixes GPG
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing on macOS
 
 
 
@@ -58,12 +58,18 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing
 ##        ##     ##    ##    ##     ## 
 
 export ANDROID_HOME="$HOME/dev/android-sdk"
+
 export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
 export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
+
+export PATH="/usr/local/opt/ncurses/bin:$PATH" # fixes nvm
+
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 export PATH="/usr/local/sbin:$PATH"
 
 
@@ -163,6 +169,6 @@ nvm() {
   nvm $@
 }
 
-### gcloud ###
+### gcloud: completions ###
 export PATH="$HOME/google-cloud-sdk/bin:$PATH"
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
