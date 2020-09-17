@@ -166,10 +166,6 @@ nvm() {
   nvm $@
 }
 
-### jenv ###
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
 ### gcloud ###
 export PATH="$HOME/google-cloud-sdk/bin:$PATH"
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
