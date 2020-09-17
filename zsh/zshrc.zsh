@@ -173,3 +173,6 @@ nvm() {
 ### gcloud: completions ###
 export PATH="$HOME/google-cloud-sdk/bin:$PATH"
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+
+### gh: completions ###
+eval "$(gh completion -s zsh)"
