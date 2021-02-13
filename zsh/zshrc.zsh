@@ -119,7 +119,8 @@ alias sudoedit='sudo $EDITOR'  # sudoedit (for sudo plugin)
 ##        #######  ##    ##  ######     ##    ####  #######  ##    ##  ######  
 
 # gitignore
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+gi() { curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$@" ;}
+
 # clone repos from github to ~/dev
 clone() { 
   lwd=$(pwd)
