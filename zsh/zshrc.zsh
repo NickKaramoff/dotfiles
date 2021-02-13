@@ -128,6 +128,8 @@ clone() {
   cd "$lwd" || exit
 }
 
+# open folder in dev folder
+dev() { cd "$HOME/dev/$1" || exit ;}
 
 # removes every dead/unused image/container
 docker_deep_clean() {
