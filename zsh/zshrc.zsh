@@ -42,8 +42,8 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 export DOTFILES="$HOME/.dotfiles"
 
-export EDITOR='nano'  # sorry
-export VISUAL='code' # sorry not sorry
+export VISUAL="nano"
+export EDITOR="nano"
 
 
 export GPG_TTY=$(tty) # fixes GPG
