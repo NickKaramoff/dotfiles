@@ -119,6 +119,14 @@ alias sudoedit='sudo $EDITOR'  # sudoedit (for sudo plugin)
 
 # gitignore
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+# clone repos from github to ~/dev
+clone() { 
+  lwd=$(pwd)
+  cd "$HOME/dev" || exit
+  gh repo clone "$1"
+  cd "$lwd" || exit
+}
+
 
 # removes every dead/unused image/container
 function docker_deep_clean() {
