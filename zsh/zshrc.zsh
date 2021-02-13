@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  . "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 DEFAULT_USER="nick"
@@ -14,9 +14,9 @@ setopt APPEND_HISTORY
 setopt HIST_REDUCE_BLANKS
 
 ### Completion ###
-fpath+=~/.zfunc
+fpath=( ~/.zfunc "${fpath[@]}" )
 autoload -Uz compinit
-if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump)" ]; then
   compinit
 else
   compinit -C
@@ -25,10 +25,10 @@ fi
 autoload -U promptinit
 promptinit
 zstyle ':completion:*' menu select=long-list select=0
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:default' list-colors "${(s.:.)LS_COLORS}"
 
-[[ ! -f ~/.zsh_plugins.sh ]] || source ~/.zsh_plugins.sh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zsh_plugins.sh ]] || . "$HOME"/.zsh_plugins.sh
+[[ ! -f ~/.p10k.zsh ]] || . "$HOME"/.p10k.zsh
 
 
 
@@ -45,8 +45,9 @@ export DOTFILES="$HOME/.dotfiles"
 export VISUAL="nano"
 export EDITOR="nano"
 
+GPG_TTY="$(tty)"
+export GPG_TTY # fixes GPG
 
-export GPG_TTY=$(tty) # fixes GPG
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing on macOS
 
 
@@ -129,7 +130,7 @@ clone() {
 
 
 # removes every dead/unused image/container
-function docker_deep_clean() {
+docker_deep_clean() {
     echo "Removing exited containers..."
     echo "============================="
     docker ps --filter status=dead --filter status=exited -aq | xargs docker rm -v
@@ -146,7 +147,7 @@ function docker_deep_clean() {
 }
 
 # docker ps with live update
-function dpsl() {
+dpsl() {
   clear;
 
   while true
