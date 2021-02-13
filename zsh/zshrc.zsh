@@ -14,6 +14,7 @@ setopt APPEND_HISTORY
 setopt HIST_REDUCE_BLANKS
 
 ### Completion ###
+fpath+=~/.zfunc
 autoload -Uz compinit
 if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
   compinit
