@@ -193,3 +193,6 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 
 ### gh: completions ###
 eval "$(gh completion -s zsh)"
+
+### thefuck: alias ###
+eval "$(thefuck --alias)"
