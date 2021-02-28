@@ -30,9 +30,6 @@ fpath=(
   $fpath
 )
 
-# Set the Go Path
-export GOPATH="$HOME/go"
-
 # Set the Android SDK path
 export ANDROID_HOME="$HOME/dev/android-sdk"
 
@@ -44,7 +41,6 @@ path=(
   $HOME/.poetry/bin
   $path
   $HOME/.cargo/bin
-  $GOPATH/bin
   $HOME/.config/yarn/global/node_modules/.bin
   $HOME/.gem/ruby/2.7.0/bin
 )

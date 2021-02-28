@@ -31,6 +31,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'node' \
   'python' \
+  'goenv' \
   'ruby' \
   'gpg' \
   'ssh'
