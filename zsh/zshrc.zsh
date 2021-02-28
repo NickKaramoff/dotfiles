@@ -29,6 +29,16 @@ clone() {
   cd "$lwd" || exit
 }
 
+colormap() {
+  i=0
+  while [ $i -le 255 ]
+  do
+    print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+"
+"}
+    i=$(( i+1 ))
+  done
+}
+
 # open folder in dev folder
 dev() { cd "$HOME/dev/$1" || exit ;}
 
