@@ -1,0 +1,28 @@
+[user]
+	email = nick@karamoff.dev
+	name = Nikita Karamov
+	signingkey = 6A4E43C08F65D6DA8945BFA2EA4E7DECEEA050E4
+[core]
+	editor = nano
+	excludesfile = /Users/nick/.gitignore_global
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[gpg]
+	program = /usr/local/bin/gpg2
+[color]
+	ui = true
+[commit]
+	template = /Users/nick/.stCommitMsg
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
