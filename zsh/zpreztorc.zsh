@@ -44,16 +44,9 @@ zstyle ':prezto:module:autosuggestions:color' found 'fg=241'
 
 # Prompt
 
-# Set the prompt colors
-zstyle ':prompt:pure:git:stash' show 'yes'
-zstyle ':prompt:pure:execution_time' color '241'
-zstyle ':prompt:pure:git:arrow' color 'yellow'
-zstyle ':prompt:pure:git:branch' color 'cyan'
-zstyle ':prompt:pure:prompt:success' color 'green'
-
 # Set the prompt theme
-zstyle ':prezto:module:prompt' theme 'pure'
-
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Python
 
