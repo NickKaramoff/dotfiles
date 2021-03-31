@@ -72,6 +72,8 @@ dpsl() {
 }
 
 # gitignore
-gi() { curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$@" ;}
+gi() {
+  curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$@"
+}
 
 eval "$(thefuck --alias)"
