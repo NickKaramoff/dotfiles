@@ -164,8 +164,6 @@
     "eslint.lintTask.enable": true,
     "eslint.packageManager": "yarn",
 
-    "languageTool.language": "en-GB",
-
     "liveServer.settings.donotShowInfoMsg": true,
 
     "material-icon-theme.activeIconPack": "none",
