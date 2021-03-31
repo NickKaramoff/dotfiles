@@ -158,7 +158,7 @@
 
     "liveServer.settings.donotShowInfoMsg": true,
 
-    "material-icon-theme.activeIconPack": "vue",
+    "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.showWelcomeMessage": false,
 
     "npm.packageManager": "yarn",
