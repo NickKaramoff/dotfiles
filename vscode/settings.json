@@ -19,6 +19,7 @@
     "editor.suggestSelection": "first",
     "editor.tabSize": 2,
 
+    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.incrementalNaming": "smart",
