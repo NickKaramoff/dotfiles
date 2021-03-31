@@ -59,7 +59,10 @@
 
     "update.showReleaseNotes": false,
 
+    "window.autoDetectColorScheme": true,
     "window.restoreWindows": "none",
+    "window.title": "${activeEditorShort}${separator}${rootPath}",
+    "window.titleBarStyle": "native",
     "window.zoomLevel": 0,
 
     "workbench.activityBar.visible": true,
