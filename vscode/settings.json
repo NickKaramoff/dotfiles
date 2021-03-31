@@ -1,4 +1,7 @@
 {
+    //
+    // VSCode settings
+    //
     "diffEditor.ignoreTrimWhitespace": false,
 
     "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Fira Mono', 'Noto Mono', monospace",
@@ -94,6 +97,9 @@
     
     
     
+    //
+    // Language-specific settings (incl. language extension)
+    //
     "[c]": {
         "editor.tabSize": 4
     },
@@ -153,6 +159,9 @@
     "typescript.npm": "/usr/local/bin/npm",
 
 
+    //
+    // Extension settings
+    //
     "discord.silent": true,
     "discord.workspaceElapsedTime": true,
 
