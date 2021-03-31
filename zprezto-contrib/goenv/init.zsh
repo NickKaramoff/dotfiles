@@ -21,5 +21,5 @@ elif (( ! $+commands[go] )); then
   return 1
 fi
 
-path=("${GOROOT}/bin" $path)
-path=($path "${GOPATH}/bin")
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
