@@ -74,7 +74,7 @@
     "workbench.preferredHighContrastColorTheme": "Material Theme Darker High Contrast",
     "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.tips.enabled": false,
 
     
