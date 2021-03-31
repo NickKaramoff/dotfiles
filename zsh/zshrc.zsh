@@ -76,4 +76,9 @@ gi() {
   curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$@"
 }
 
+# scc with sensible config
+sccc() {
+  scc --no-cocomo -c --no-min-gen "$@"
+}
+
 eval "$(thefuck --alias)"
