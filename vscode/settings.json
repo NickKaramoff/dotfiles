@@ -119,7 +119,9 @@
             88
         ]
     },
+    "python.analysis.completeFunctionParens": true,
     "python.analysis.logLevel": "Warning",
+    "python.analysis.typeCheckingMode": "strict",
     "python.experiments.enabled": false,
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
