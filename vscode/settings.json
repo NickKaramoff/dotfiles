@@ -84,21 +84,24 @@
     // Language-specific settings (incl. language extension)
     //
     "[c]": {
+        "editor.rulers": [
+            80
+        ],
         "editor.tabSize": 4
     },
     "cmake.configureOnOpen": true,
-    
-    "html.format.endWithNewline": true,
-    "html.format.templating": true,
 
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
-
-    "[java]": {
+    "[html]": {
         "editor.rulers": [
+            100,
             120
         ]
     },
+    "html.format.endWithNewline": true,
+    "html.format.templating": true,
+
+    "go.formatTool": "gofmt",
+    "go.useLanguageServer": true,
 
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -113,8 +116,11 @@
     },
     
     "[markdown]": {
+        "editor.rulers": [
+            80
+        ],
         "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 100
+        "editor.wordWrapColumn": 80
     },
     "markdown.preview.lineHeight": 1.5,
 
