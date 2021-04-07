@@ -76,6 +76,11 @@ gi() {
   curl -sLw "\n" "https://www.toptal.com/developers/gitignore/api/$@"
 }
 
+# lighthouse
+lh() {
+  npm exec --yes -- lighthouse "$@" --chrome-flags="--headless" --output-path="/tmp/lighthouse-results.html" --view
+}
+
 # scc with sensible config
 sccc() {
   scc --no-cocomo -c --no-min-gen "$@"
