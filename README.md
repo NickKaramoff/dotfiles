@@ -32,6 +32,7 @@ ln -s $HOME/.dotfiles/zsh/zpreztorc.zsh $HOME/.zpreztorc
 ln -s $HOME/.dotfiles/zsh/zshenv.zsh $HOME/.zshenv
 ln -s $HOME/.dotfiles/zsh/zshrc.zsh $HOME/.zshrc
 ln -s $HOME/.dotfiles/zsh/zlogin.zsh $HOME/.zlogin
+ln -s $HOME/.dotfiles/zprezto-contrib $HOME/.zprezto-contrib
 
 # homebrew setup & package install
 ln -s $HOME/.dotfiles/Brewfile .Brewfile
