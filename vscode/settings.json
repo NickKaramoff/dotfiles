@@ -4,6 +4,7 @@
     //
     "diffEditor.ignoreTrimWhitespace": false,
 
+    "editor.accessibilitySupport": "off",
     "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Fira Mono', 'Noto Mono', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
