@@ -164,6 +164,10 @@
     "eslint.lintTask.enable": true,
     "eslint.packageManager": "yarn",
 
+    "gitblame.ignoreWhitespace": true,
+    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+    "gitblame.statusBarMessageNoCommit": "Not committed yet",
+
     "liveServer.settings.donotShowInfoMsg": true,
 
     "material-icon-theme.activeIconPack": "none",
