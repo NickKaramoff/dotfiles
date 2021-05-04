@@ -27,12 +27,12 @@ cd yay
 makepkg -si
 
 # install dependencies
-yay -S --needed aria2c curl git less nano sudo thefuck zsh
+yay -S --needed aria2 curl git less nano sudo thefuck zsh
 
 cd $HOME
 
 # get dotfiles
-git clone https://github.com/NickKaramoff/dotfiles.git .dotfiles
+git clone https://github.com/NickKaramoff/dotfiles.git -b rpi_arch --single-branch .dotfiles
 
 # install Prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
@@ -60,7 +60,7 @@ ln -s $HOME/.dotfiles/git/gitignore_global $HOME/.gitignore_global
 
 # aria2c setup
 mkdir -p $XDG_CONFIG_HOME/aria2/
-ln -s $HOME/.dotfiles/aria2.conf $XDG_CONFIG_HOME/aria2/aria2.conf
+ln -s $HOME/.dotfiles/aria2.conf $HOME/.aria2/aria2.conf
 ```
 
 [Arch]: https://archlinuxarm.org/
