@@ -87,3 +87,8 @@ sccc() {
 }
 
 eval "$(thefuck --alias)"
+
+wttr() {
+  _wttr_location=$(echo "$@" | sed 's/ /+/g')
+  curl --fail --get --silent --show-error --header "Accept-Language: ${LANG%_*}" --compressed "wttr.in/${_wttr_location}?m2Fq"
+}
