@@ -30,19 +30,14 @@ fpath=(
   $fpath
 )
 
-# Set the Android SDK path
-export ANDROID_HOME="$HOME/dev/android-sdk"
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/opt/gnu-getopt/bin
-  /usr/local/{bin,sbin}
-  $HOME/.yarn/bin
-  $HOME/.poetry/bin
+  # $HOME/.yarn/bin
+  # $HOME/.poetry/bin
   $path
-  $HOME/.cargo/bin
-  $HOME/.config/yarn/global/node_modules/.bin
-  $HOME/.gem/ruby/2.7.0/bin
+  # $HOME/.cargo/bin
+  # $HOME/.config/yarn/global/node_modules/.bin
 )
 
 
