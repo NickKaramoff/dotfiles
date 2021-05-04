@@ -28,13 +28,12 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'git' \
   'pacman' \
-  # 'homebrew' \
-#   'node' \
-#   'python' \
-#   'ruby' \
+  'node' \
+  'python' \
+  'ruby' \
   'gpg' \
-  'ssh'
-#   'asdf'
+  'ssh' \
+  'asdf'
 
 
 # Autosuggestions
