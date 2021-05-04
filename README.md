@@ -5,11 +5,11 @@ My configuration files for various tools, CLIs and applications.
 This repository also serves as an install guide for a fresh [Arch]-based
 Raspberry Pi so that I can have the same environment everywhere.
 
-## Prerequisities
+## Prerequisites
 
 Installation process of these tools is OS-dependent
 
-1. [`zsh`](https://zsh.org/)
+1. Pacman
 
 ## Install
 
