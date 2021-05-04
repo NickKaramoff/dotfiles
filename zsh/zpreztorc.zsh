@@ -31,7 +31,6 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'python' \
   'ruby' \
-  'gpg' \
   'ssh' \
   'asdf'
 
