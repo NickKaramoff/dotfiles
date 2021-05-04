@@ -175,6 +175,8 @@
     "gitblame.ignoreWhitespace": true,
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
     "gitblame.statusBarMessageNoCommit": "Not committed yet",
+    
+    "latex-workshop.message.update.show": false,
 
     "liveServer.settings.donotShowInfoMsg": true,
 
