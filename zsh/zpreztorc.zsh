@@ -27,8 +27,8 @@ zstyle ':prezto:load' pmodule \
   'autosuggestions' \
   'prompt' \
   'git' \
-  'homebrew' \
-  'osx' \
+  'pacman' \
+  # 'homebrew' \
   'node' \
   'python' \
   'ruby' \
@@ -48,6 +48,11 @@ zstyle ':prezto:module:autosuggestions:color' found 'fg=241'
 # Set the prompt theme
 zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Pacman
+
+# Set pacman frontend
+zstyle ':prezto:module:pacman' frontend 'yay'
 
 # Python
 
