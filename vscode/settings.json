@@ -139,6 +139,7 @@
     "python.analysis.completeFunctionParens": true,
     "python.analysis.logLevel": "Warning",
     "python.analysis.typeCheckingMode": "strict",
+    "python.defaultInterpreterPath": "/Users/nick/.asdf/shims/python",
     "python.experiments.enabled": false,
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
