@@ -153,7 +153,7 @@
     },
     "python.analysis.completeFunctionParens": true,
     "python.analysis.logLevel": "Warning",
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
     "python.defaultInterpreterPath": "/Users/nick/.asdf/shims/python",
     "python.experiments.enabled": false,
     "python.formatting.provider": "black",
