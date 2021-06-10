@@ -109,7 +109,6 @@
         ],
         "editor.tabSize": 4
     },
-    "cmake.configureOnOpen": true,
 
     "[html]": {
         "editor.rulers": [
@@ -189,9 +188,7 @@
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
     "gitblame.statusBarMessageNoCommit": "Not committed yet",
     
-    "latex-workshop.message.update.show": false,
 
-    "liveServer.settings.donotShowInfoMsg": true,
 
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.showWelcomeMessage": false,
@@ -200,6 +197,4 @@
 
     "remote.SSH.useFlock": false,
 
-    "vscode-typograf.autoDetectLocale": false,
-    "vscode-typograf.locale": "en-GB"
 }
