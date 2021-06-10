@@ -206,6 +206,5 @@
 
     "redhat.telemetry.enabled": false,
 
-    "remote.SSH.useFlock": false,
-
+    "remote.SSH.useFlock": false
 }
