@@ -13,12 +13,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+alias code=codium
 alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"'
 
 # create an .xz archive from directory
 archive() {
   filename=$(basename $1)
   tar --create --xz --options='compression-level=9' --file "$filename.tar.xz" $1
+}
+
+# open a folder from ~/dev in VS Codium
+c() {
+  codium "$HOME/dev/$1"
 }
 
 # clone repos from github to ~/dev
