@@ -88,6 +88,7 @@
             "filenamePattern": "*.ipynb"
         }
     ],
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "material-icon-theme",
