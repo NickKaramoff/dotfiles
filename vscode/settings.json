@@ -51,12 +51,26 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "icon": "terminal-zsh"
+        },
+        "sh": {
+            "path": "dash",
+            "icon": "terminal"
+        }
+    },
     "terminal.integrated.scrollback": 10000,
-    "terminal.integrated.shell.osx": "/bin/zsh",
 
     "update.showReleaseNotes": false,
 
