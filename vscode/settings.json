@@ -134,6 +134,8 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
 
+    "liquid.format": true,
+
     "[markdown]": {
         "editor.rulers": [
             80
@@ -188,12 +190,20 @@
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
     "gitblame.statusBarMessageNoCommit": "Not committed yet",
     
+    "githubPullRequests.fileListLayout": "tree",
 
+    "latex-workshop.view.pdf.viewer": "external",
 
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.showWelcomeMessage": false,
 
     "npm.packageManager": "yarn",
+
+    "projectManager.git.baseFolders": [
+        "~/dev"
+    ],
+
+    "redhat.telemetry.enabled": false,
 
     "remote.SSH.useFlock": false,
 
