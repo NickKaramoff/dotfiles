@@ -175,8 +175,7 @@
     //
     // Extension settings
     //
-    "discord.silent": true,
-    "discord.workspaceElapsedTime": true,
+    "discord.suppressNotifications": true,
 
     "emmet.includeLanguages": {
         "jekyll": "html",
