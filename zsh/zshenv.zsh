@@ -11,4 +11,3 @@ export DOTFILES="$HOME/.dotfiles"
 export HIST_FILE="$HOME/.zsh_history"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES # fixes python multiprocessing on macOS
-
