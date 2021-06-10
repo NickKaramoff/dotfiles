@@ -81,7 +81,7 @@
     "window.zoomLevel": 0,
 
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorTheme": "Night Owl Light",
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
@@ -91,9 +91,9 @@
     "workbench.enableExperiments": false,
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.preferredDarkColorTheme": "Material Theme Darker High Contrast",
-    "workbench.preferredHighContrastColorTheme": "Material Theme Darker High Contrast",
-    "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.preferredDarkColorTheme": "Night Owl",
+    "workbench.preferredHighContrastColorTheme": "Night Owl",
+    "workbench.preferredLightColorTheme": "Night Owl Light",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.startupEditor": "newUntitledFile",
